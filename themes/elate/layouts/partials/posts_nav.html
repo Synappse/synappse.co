@@ -1,0 +1,34 @@
+    <header role="banner" id="fh5co-header" class="navbar-fixed-top">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+
+                    <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+                        <img id="logo_color" src="images/{{ .Site.Params.navigation.logo_color }}" style="height: 45px; margin-top: -12px;">
+                    </a>
+
+                    <!-- <a class="navbar-brand" href="index.html">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>  -->
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+
+                    {{ range .Site.Menus.prepend }}
+                        <li><a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
+                    {{ end }}
+
+                    <li><a href="{{ .Site.BaseURL }}" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
+
+                    <li><a href="{{ .Site.BaseURL }}blog/"><span>{{ with .Site.Params.navigation.blog }}{{ . | markdownify }}{{ end }}</span></a></li>
+                    
+                    {{ range .Site.Menus.postpend }}
+                        <li><a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+    </div>
+</header>

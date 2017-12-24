@@ -1,0 +1,354 @@
+# Page settings
+BaseURL = "localhost:1313"
+Title = "Synappse | Web & Mobile Solutions"
+languageCode = "en-us"
+theme = "elate"
+
+[params]
+
+  # Meta
+  author = "Synappse"
+  description = ""
+  email = "sebastian@synappse.pl"
+  # Navigation
+  [params.navigation]
+    logo_color = "synappse-logo-full-color.png"
+    logo_white = "synappse-logo-full.png"
+    brand = "Synappse"
+    home = "Home"
+    blog = "Blog"
+    work = "Work"
+    testimonials = "Testimonials"
+    services = "Services"
+    about = "About"
+    contact = "Contact"
+
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+    
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://localhost:1313/blog/"
+    #  name = "Blog"
+    #  weight = 10
+
+    # postpended links
+    #[[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
+  
+  # Hero section
+  [params.hero]
+    title = "You have the ideas.<br>We have the tools to make them a reality."
+    subtitle = ''
+ 
+  # Intro section
+  # Available icons: http://simplelineicons.com/
+  [params.intro]
+
+  [[params.intro.item]]
+    title = "Plan"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "contact"
+    button = "Get In Touch"
+    icon = "icon-bulb"
+    img = "img_7.jpg"
+
+  [[params.intro.item]]
+    title = "Develop"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "work"
+    button = "See our work"
+    icon = "icon-wrench"
+    img = "img_8.jpg"
+
+  [[params.intro.item]]
+    title = "Launch"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "testimonials"
+    button = "Why us?"
+    icon = "icon-rocket"
+    img = "img_10.jpg"
+
+  [params.intro.video]
+    enable = true
+    title = "Case study: Estimote iBeacons at Neon Museum"
+    icon = "icon-play2"
+    url = "https://vimeo.com/86191662"
+
+
+  # Work section
+  [params.work]
+    enable = true
+    title = "Work"
+    description = "We care about quality — and we hope that you do too."
+    footertext = ''
+    #footertext = '** Demo images from <a href="http://plmd.me/" target="_blank">plmd.me</a>'
+
+    [[params.work.row]]
+      img = "work/maklarappen_mockup_v1.png"
+      alt = "Maklarappen"
+      title = "Maklarappen"
+      subtitle = "Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/spray_mockup_v1.png"
+      alt = "Spray"
+      title = "Spray"
+      subtitle = "Development | Backend | iPhone | Android"
+
+    [[params.work.row]]
+      img = "work/sprintair_mockup_v1.png"
+      alt = "SprintAir"
+      title = "SprintAir"
+      subtitle = "Design | Development | iPhone | iPad"
+
+    [[params.work.row]]
+      img = "work/std_mockup_v1.png"
+      alt = "STD Triage"
+      title = "STD Triage"
+      subtitle = "Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/idoc24_mockup_v1.png"
+      alt = "iDoc24"
+      title = "iDoc24"
+      subtitle = "Design | Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/synappse-arguido-1.png"
+      alt = "Arguido"
+      title = "Arguido"
+      subtitle = "Redesign | Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/smokewatchers_mockup_v1.png"
+      alt = "SmokeWatchers"
+      title = "SmokeWatchers"
+      subtitle = "Development | iPhone"
+
+    [[params.work.row]]    
+      img = "work/neonmuseum_mockup_v1.png"
+      alt = "Neon Museum"
+      title = "Neon Museum"
+      subtitle = "Design | Development | iPhone | iBeacons"
+
+    [[params.work.row]]
+      img = "work/mercedes-benz_fashion_week_mockup_v1.png"
+      alt = "Mercedes-Benz Prague Fashion Week"
+      title = "Mercedes-Benz Prague Fashion Week"
+      subtitle = "Design | Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/silencio_mockup_v1.png"
+      alt = "Silencio"
+      title = "Silencio"
+      subtitle = "Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/echoes_mockup_v1.png"
+      alt = "Echoes"
+      title = "Echoes"
+      subtitle = "Design | Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/mustashop_mockup_v1.png"
+      alt = "Mustashop"
+      title = "Mustashop"
+      subtitle = "Design | Development | iPhone | Android | iBeacons"
+
+    [[params.work.row]]
+      img = "work/everthin_mockup_v1.png"
+      alt = "Everthin"
+      title = "Everthin"
+      subtitle = "Development | iPhone | iPad"
+
+    [[params.work.row]]
+      img = "work/tenerifebay_mockup_v1.png"
+      alt = "Tenerife Bay"
+      title = "Tenerife Bay"
+      subtitle = "Development | iPhone"
+      
+    [[params.work.row]]
+      img = "work/sawataxi_mockup_v1.png"
+      alt = "SawaTaxi"
+      title = "SawaTaxi"
+      subtitle = "Development | iPhone" 
+
+    [[params.work.row]]
+      img = "work/euro2012_mockup_v1.png"
+      alt = "Euro 2012"
+      title = "Euro 2012"
+      subtitle = "Backend | Design | Development | iPhone"
+
+    [[params.work.row]]
+      img = "work/eucerin-mockup_v1.jpg"
+      alt = "Eucerin"
+      title = "Eucerin"
+      subtitle = "Development | iPad"
+
+    [[params.work.row]]
+      img = "work/cerbToken-mockup_v1.jpg"
+      alt = "Cerb Token"
+      title = "Cerb Token"
+      subtitle = "Development | iPhone"
+
+  # Testimonials section
+  [params.testimonials]
+    enable = true
+    title = "Testimonials"
+    description = ""
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;"
+      person = 'Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person1.jpg"
+      alt = "Person1"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;"
+      person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person2.jpg"
+      alt = "Person2"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;"
+      person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person3.jpg"
+      alt = "Person3"
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    description = "When you choose to work with Synappse, expect the best—from the planning stages through to when your application goes live.  We take a step-by-step approach towards launch that’s geared toward accounting for every last detail and delivering an exceptional product."
+
+    [[params.services.item]]
+      title = "Brand &amp; Strategy"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-anchor"
+
+    [[params.services.item]]
+      title = "Web &amp; Interface"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-layers2"
+    [[params.services.item]]
+      title = "Photo &amp; Video"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-video2"
+
+      [[params.services.item]]
+      title = "CMS &amp; eCommerce"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
+      icon = "icon-monitor"
+
+  # About section
+  [params.about]
+    enable = false
+    title = "About"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+    [[params.about.item]]
+      name = "Jean Smith"
+      position = "Web Designer"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      img = "person1.jpg"
+      alt = "Person1"
+      social = [
+        ["icon-twitter", "#"],
+        ["icon-facebook", "#"],
+        ["icon-linkedin", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "Sebastian Suchanowski"
+      position = "CEO"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      img = "team/sebastian_suchanowski_photo.jpg"
+      alt = "Sebastian Suchanowski Photo"
+      social = [
+        ["icon-twitter", "#"],
+        ["icon-facebook", "#"],
+        ["icon-github", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "Larry Ben"
+      position = "Web Designer"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      img = "person3.jpg"
+      alt = "Person3"
+      social = [
+        ["icon-twitter", "#"],
+        ["icon-facebook", "#"],
+        ["icon-dribbble", "#"]
+      ]
+
+  # Counters section
+  [params.counters]
+    enable = false
+    title = "Stats"
+    background = "full_image_1.jpg"
+
+    [[params.counters.item]]
+      description = "Finished projects"
+      icon = "icon-briefcase"
+      from = 0
+      to = 89
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Lines of code"
+      icon = "icon-code"
+      from = 0
+      to = 2343409
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Cups of coffee"
+      icon = "icon-cup"
+      from = 0
+      to = 1302
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Happy clients"
+      icon = "icon-people"
+      from = 0
+      to = 52
+      interval = 50
+      speed = 5000
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = false
+    title = "Get in touch"
+    description = "With our passionate, creative team, we can take your project from an idea to a prototype to a full-fledged solution, faster, cheaper, and better than the other guys."
+    
+    # Available icons: http://simplelineicons.com/
+    details = [
+        # ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
+       # ["icon-social-skype", "s.suchanowski"],
+        ["icon-envelope", '<a href="mailto:contact@synappse.co">contact@synappse.co</a>'],
+        ["icon-globe", '<a href="http://synappse.co/" target="_blank">synappse.co</a>']
+      ]
+
+    name = "Name"
+    email = "Email"
+    phone = ""
+    budget = "Budget"
+    message = "Message"
+    button = "Send message"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    twitter = "https://twitter.com/synappse"
+    facebook = "https://www.facebook.com/synappse/"
+    youtube = ""
+    copyright = '&copy; Synappse. All Rights Reserved'

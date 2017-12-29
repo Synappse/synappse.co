@@ -33,10 +33,10 @@ theme = "elate"
     #  weight = 10
 
     # postpended links
-    #[[menu.postpend]]
-    #  url = "http://gohugo.io"
-    #  name = "External link"
-    #  weight = 10
+    [[menu.postpend]]
+      url = "blog/"
+      name = "Blog"
+      weight = 10
   
   # Hero section
   [params.hero]
@@ -49,7 +49,7 @@ theme = "elate"
 
   [[params.intro.item]]
     title = "Plan"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "On projects big and small, we take an individual approach, putting ourselves in our clients’ shoes to create something that their customers use, love and continually rely on."
     url = "contact"
     button = "Get In Touch"
     icon = "icon-bulb"
@@ -57,7 +57,7 @@ theme = "elate"
 
   [[params.intro.item]]
     title = "Develop"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "No matter how big or small your project is, we are committed to guiding you seamlessly through the creation process. We love contributing to our customers’ success by creating cool products that make a difference in people’s everyday lives!"
     url = "work"
     button = "See our work"
     icon = "icon-wrench"
@@ -65,7 +65,7 @@ theme = "elate"
 
   [[params.intro.item]]
     title = "Launch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "We conduct rigorous testing on our end and provide access for you to do the same. Only when you’re 100% satisfied, do we launch a final version of your application."
     url = "testimonials"
     button = "Why us?"
     icon = "icon-rocket"
@@ -196,7 +196,7 @@ theme = "elate"
 
   # Testimonials section
   [params.testimonials]
-    enable = true
+    enable = false
     title = "Testimonials"
     description = ""
 
@@ -222,26 +222,27 @@ theme = "elate"
   [params.services]
     enable = true
     title = "Services"
-    description = "When you choose to work with Synappse, expect the best—from the planning stages through to when your application goes live.  We take a step-by-step approach towards launch that’s geared toward accounting for every last detail and delivering an exceptional product."
+    description = "When you choose to work with Synappse, expect the best—from the planning stages through to when your application goes live. We take a step-by-step approach towards launch that’s geared toward accounting for every last detail and delivering an exceptional product."
 
     [[params.services.item]]
-      title = "Brand &amp; Strategy"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
+      title = "Concept &amp; Plan"
+      description = "During pre-planning, we dig deep to understand your goals and formulate a plan to begin building your system. Direct contact with our developers allows you to clearly communicate what’s working and what isn’t."
+      icon = "icon-align-right2"
 
     [[params.services.item]]
-      title = "Web &amp; Interface"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
+      title = "Design"
+      description = "We take a great pride in a design process. From day one we work on prototypes and mockups to give you the best experience there is. Based on your feedback, we fine-tune the project and add all those little thing that you will love."
+      icon = "icon-image2"
+
     [[params.services.item]]
-      title = "Photo &amp; Video"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
+      title = "Mobile &amp; Web"
+      description = "Mobile first projects are our favorite. We love building native apps but we are not afraid cross-platform challenges, eg. react-native. For most projects we are developing a website and the backend to feed the app with content."
+      icon = "icon-code"
 
       [[params.services.item]]
-      title = "CMS &amp; eCommerce"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
-      icon = "icon-monitor"
+      title = "New Tech"
+      description = "Need to work with iBeacons? Maybe Internet of Things or Virtual and Augmented Reality? We love to play with all the hottest tech out there. Let us know what do you need."   
+      icon = "icon-cloud"
 
   # About section
   [params.about]

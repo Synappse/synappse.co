@@ -3,6 +3,7 @@ BaseURL = "localhost:1313"
 Title = "Synappse | Web & Mobile Solutions"
 languageCode = "en-us"
 theme = "elate"
+googleAnalytics = "UA-3669024-6"
 
 [params]
 

@@ -2,11 +2,12 @@
 
 {{ partial "header" . }}
     {{ partial "navbar" . }}
-    {{ partial "sidebar" . }}
     <!-- Main -->
+    {{ partial "sidebar" . }}
     <div id="main">
-        {{ $paginator := .Paginate .Data.Pages }}
-        {{ range .Paginator.Pages }}
+        <h1>Category: {{ .Title }}</h1>
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
             {{ .Render "content-list" }}
         {{ end }}
 

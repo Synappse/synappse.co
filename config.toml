@@ -4,49 +4,104 @@ Title = "Synappse | Web & Mobile Solutions"
 languageCode = "en-us"
 theme = "elate"
 googleAnalytics = "UA-3669024-6"
+preserveTaxonomyNames = true
+paginate = 5
+disqusShortname = "ssuchanowski"
+pluralizeListTitles = false
 
 [params]
-
-  # Meta
-  author = "Synappse"
-  description = ""
+  navbarTitle          = "Synappse"
+  viewMorePostLink     = "/blog/"
+  dynamicTitles        = true
+  rssAppearAtTop       = true
+  rssAppearAtBottom    = true
+  socialAppearAtTop    = true
+  socialAppearAtBottom = true
+  categoriesByCount    = true
+  includeReadingTime   = true
+  loadFavicon          = false
+  faviconVersion       = ""
+  socialShare          = true
+  author = "Synappse | Web & Mobile Solutions"
+  description = "With our passionate, creative team, we can take your project from an idea to a prototype to a full-fledged solution, faster and better than the other guys."
   email = "sebastian@synappse.pl"
-  # Navigation
+
+[social]
+  # Coding Communities
+  github          = "synappse"
+  gitlab          = ""
+  stackoverflow   = "" # User Number
+  bitbucket       = ""
+  jsfiddle        = ""
+  codepen         = ""
+  # Visual Art Communities
+  deviantart      = ""
+  flickr          = ""
+  behance         = ""
+  dribbble        = ""
+  # Publishing Communities
+  wordpress       = ""
+  medium          = ""
+  # Professional/Business Oriented Communities
+  linkedin        = ""
+  foursquare      = ""
+  xing            = ""
+  slideshare      = ""
+  # Social Networks
+  facebook        = "synappse"
+  googleplus      = ""
+  reddit          = ""
+  quora           = ""
+  youtube         = ""
+  vimeo           = ""
+  whatsapp        = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat          = ""
+    qq              = "" # User ID Number
+  instagram       = ""
+  tumblr          = ""
+  twitter         = "Synappse"
+  skype           = ""
+  snapchat        = ""
+  pinterest       = ""
+  telegram        = ""
+  vine            = ""
+  # Email
+  email           = "contact@synappse.pl"  # TODO: sprawdzic maila
+
+[params.postAmount]
+  sidebar = 3
+
   [params.navigation]
     logo_color = "synappse-logo-full-color.png"
     logo_white = "synappse-logo-full.png"
     brand = "Synappse"
     home = "Home"
-    blog = "Blog"
     work = "Work"
     testimonials = "Testimonials"
     services = "Services"
     about = "About"
     contact = "Contact"
 
-    # You can add custom links before or after the default links
-    # Assign a weight to define the order
-    
-    # prepended links
-    #[[menu.prepend]]
-    #  url = "http://localhost:1313/blog/"
-    #  name = "Blog"
-    #  weight = 10
-
-    # postpended links
     [[menu.postpend]]
-      url = "blog/"
+      url = "/blog/"
       name = "Blog"
       weight = 10
   
-  # Hero section
   [params.hero]
     title = "You have the ideas.<br>We have the tools to make them a reality."
     subtitle = ''
  
-  # Intro section
-  # Available icons: http://simplelineicons.com/
   [params.intro]
+    header = ''
+    paragraph = '<a href="/blog/">Tech Blog</a>'
+
+  [params.intro.pic]
+    src       = "/images/synappse-logo-color-2.png"
+    circle    = false
+    imperfect = false
+    width     = ""
+    alt       = "Synappse Logo"
 
   [[params.intro.item]]
     title = "Plan"
@@ -78,14 +133,11 @@ googleAnalytics = "UA-3669024-6"
     icon = "icon-play2"
     url = "https://vimeo.com/86191662"
 
-
-  # Work section
   [params.work]
     enable = true
     title = "Work"
     description = "We care about quality — and we hope that you do too."
     footertext = ''
-    #footertext = '** Demo images from <a href="http://plmd.me/" target="_blank">plmd.me</a>'
 
     [[params.work.row]]
       img = "work/maklarappen_mockup_v1.png"
@@ -195,7 +247,6 @@ googleAnalytics = "UA-3669024-6"
       title = "Cerb Token"
       subtitle = "Development | iPhone"
 
-  # Testimonials section
   [params.testimonials]
     enable = false
     title = "Testimonials"
@@ -219,7 +270,6 @@ googleAnalytics = "UA-3669024-6"
       img = "person3.jpg"
       alt = "Person3"
 
-  # Services section
   [params.services]
     enable = true
     title = "Services"
@@ -245,7 +295,6 @@ googleAnalytics = "UA-3669024-6"
       description = "Need to work with iBeacons? Maybe Internet of Things or Virtual and Augmented Reality? We love to play with all the hottest tech out there. Let us know what do you need."   
       icon = "icon-cloud"
 
-  # About section
   [params.about]
     enable = false
     title = "About"
@@ -287,7 +336,6 @@ googleAnalytics = "UA-3669024-6"
         ["icon-dribbble", "#"]
       ]
 
-  # Counters section
   [params.counters]
     enable = false
     title = "Stats"
@@ -325,7 +373,6 @@ googleAnalytics = "UA-3669024-6"
       interval = 50
       speed = 5000
 
-  # Contact section
   [params.contact]
     enable = true
     map = false
@@ -347,7 +394,6 @@ googleAnalytics = "UA-3669024-6"
     message = "Message"
     button = "Send message"
 
-  # Footer section
   [params.footer]
     enable = true
     twitter = "https://twitter.com/synappse"

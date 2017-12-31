@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+        {{ partial "posts_nav.html" .}}
+
+
+
+
+        <div id="content" style="margin-top: 70px;">
+            <div class="container">
+                <div class="col-sm-6 col-sm-offset-3" id="error-page">
+                    <div class="box">
+                        <p class="text-center">
+                            <a href="{{ .Site.BaseURL }}">
+                                <img src="images/{{ .Site.Params.navigation.logo_color }}" alt="{{ .Title }} logo" style="height: 50px;">
+                            </a>
+
+                            <h2>The page you were looking for<br>does not exists</h2>
+
+                            <p class="buttons">
+                                <a href="{{ .Site.BaseURL }}" class="btn btn-template-main">
+                                    <i class="fa fa-home"></i> Go to Homepage
+                                </a>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        {{ if .Site.Params.footer.enable }}
+        	{{ partial "footer.html" .}}
+        {{ end }}
+    </body>
+</html>

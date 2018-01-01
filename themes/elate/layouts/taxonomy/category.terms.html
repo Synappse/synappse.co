@@ -2,6 +2,7 @@
 
 {{ partial "header" . }}
     {{ partial "navbar" . }}
+    {{ partial "sidebar" . }}
     <!-- Main -->
     <div id="main">
         {{ if .Site.Params.categoriesByCount }}
@@ -34,5 +35,4 @@
     </div>
 
     {{ $.Scratch.Set "showCategories" false }}
-    {{ partial "sidebar" . }}
-{{ partial "footer" . }}
+{{ partial "footer-2" . }}

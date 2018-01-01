@@ -1,3 +1,20 @@
 <ul class="stats">
-    
+    <!-- Display the categories associated with this post -->
+    {{ if isset .Params "categories" }}
+        {{ $categoryCount := (len .Params.categories) }}
+
+        <i class="fa fa-sitemap">&nbsp;</i> 
+
+        {{ $categoryName := "Categories" }}
+        {{ if gt $categoryCount 1 }}
+            {{ $categoryName }}
+        {{ else }}
+            {{ $categoryName | singularize }}
+        {{ end }}
+
+        {{ $.Scratch.Set "categoryUrl" "/categories/" }}
+        {{ range .Params.categories }}
+            <li><a href='{{ add ($.Scratch.Get "categoryUrl") . | urlize }}'>{{ . }}</a></li>
+        {{ end }}
+    {{ end }}
 </ul>

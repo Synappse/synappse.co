@@ -1,6 +1,6 @@
 +++
 author = "Sebastian Suchanowski"
-categories = ["Hugo", "Jekyll"]
+categories = ["Internet Of Things"]
 date = "2017-12-30"
 description = "How I made it finally work"
 featured = "0PIR_sensor.jpg"
@@ -9,6 +9,7 @@ featuredpath = "img"
 linktitle = ""
 title = "PIR Sensor COnfiguration"
 type = "post"
+draft = true
 
 +++
 

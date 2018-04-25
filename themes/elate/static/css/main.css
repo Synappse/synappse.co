@@ -181,11 +181,11 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #2ebaae !important;
+			color: #e99248 !important;
 		}
 
 			a:hover:before {
-				color: #2ebaae !important;
+				color: #e99248 !important;
 			}
 
 	strong, b {
@@ -411,8 +411,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border: solid 1px #2ebaae;
-			color: #2ebaae !important;
+			border: solid 1px #e99248;
+			color: #e99248 !important;
 		}
 
 			input[type="submit"]:hover:active,
@@ -577,7 +577,7 @@
 			-webkit-transition:border-color 0.3s ease-in-out;
 			moz-transition:border-color 0.3s ease-in-out;
 			transition:border-color 0.3s ease-in-out;
-			border-color: #2ebaae;
+			border-color: #e99248;
 		}
 
 		input[type="text"]:focus,
@@ -592,7 +592,7 @@
 		select:active,
 		textarea:focus,
 		textarea:active {
-			border: solid 1px #2ebaae;
+			border: solid 1px #e99248;
 		}
 
 	.select-wrapper {
@@ -689,7 +689,7 @@
 			}
 
 			input[type="radio"]:focus + label:before {
-				border: solid 1px #2ebaae;
+				border: solid 1px #e99248;
 			}
 
 	input[type="radio"] + label:before {
@@ -2776,7 +2776,7 @@
 					}
 
 					#menu .links > li a:hover h3 {
-						color: #2ebaae;
+						color: #e99248;
 					}
 
 				#menu .links > li:first-child {

@@ -1,5 +1,5 @@
 # Page settings
-BaseURL = "localhost:1313"
+BaseURL = "synappse.co"
 Title = "Synappse | Web & Mobile Solutions"
 languageCode = "en-us"
 theme = "elate"

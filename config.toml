@@ -70,7 +70,7 @@ pluralizeListTitles = false
   email           = "contact@synappse.pl"  # TODO: sprawdzic maila
 
 [params.postAmount]
-  sidebar = 3
+  sidebar = 5
 
   [params.navigation]
     logo_color = "synappse-logo-full-color.png"

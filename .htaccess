@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+Redirect 301 /work-perks-unlimited-vacation-vs-productivity/ /blog/work-perks-unlimited-vacation-vs-productivity/
+Redirect 301 /impact-mobile-applications-healthcare/ /blog/impact-mobile-applications-healthcare/
+Redirect 301 /estimote-hackathon/ /blog/estimote-hackathon/
+Redirect 301 /making-off-think-big-video/ /blog/making-of-think-big-video/
+Redirect 301 /scrollview-has-ambiguous-scrollable-content-height/ /blog/uiscrollview-has-ambiguous-scrollable-content-height/

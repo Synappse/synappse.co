@@ -1,6 +1,7 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 Redirect 301 /work-perks-unlimited-vacation-vs-productivity/ /blog/work-perks-unlimited-vacation-vs-productivity/
 Redirect 301 /impact-mobile-applications-healthcare/ /blog/impact-mobile-applications-healthcare/

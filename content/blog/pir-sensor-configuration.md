@@ -10,7 +10,6 @@ linktitle = ""
 title = "PIR Sensor COnfiguration"
 type = "post"
 draft = true
-
 +++
 
 ## Introduction

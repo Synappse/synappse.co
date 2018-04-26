@@ -30,7 +30,9 @@ Big thanks to [Władek](https://www.facebook.com/wladyslaw.prazmowski) and Macie
 ## Final result
 
 <center>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/nmB8Qtk0BgE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<div class="vid-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/nmB8Qtk0BgE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 </center>
 
 

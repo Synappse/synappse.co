@@ -398,5 +398,5 @@ pluralizeListTitles = false
     enable = true
     twitter = "https://twitter.com/synappse"
     facebook = "https://www.facebook.com/synappse/"
-    youtube = ""
+    youtube = "https://www.youtube.com/channel/UCN8nRYmOgA8MCnDxnyLH-vg" # TODO: podmienic link jak bedzie juz porzadny
     copyright = '&copy; Synappse. All Rights Reserved'

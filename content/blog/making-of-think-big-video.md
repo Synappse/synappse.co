@@ -13,7 +13,7 @@ type = "post"
 
 See what's behind the scenes of our upcoming promo video for the [UPC Biznes. Think big.](https://www.facebook.com/UPCbiznes) contest!
 
-Big thanks to [Władek](https://www.facebook.com/wladyslaw.prazmowski) and Maciek - our amazing operators.  This striking place where we've made the shoots is the [Neon Muzeum](http://www.neonmuzeum.org).
+Big thanks to [Władek](https://www.facebook.com/wladyslaw.prazmowski) and Maciek - our amazing operators. This striking place where we've made the shoots is the [Neon Muzeum](http://www.neonmuzeum.org).
 
 ## Gallery
 

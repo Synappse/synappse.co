@@ -1,6 +1,6 @@
 +++
 author = "Sebastian Suchanowski"
-categories = ["iOS", "Maps"]
+categories = ["iOS", "Swift", "Maps"]
 date = "2018-04-28"
 description = "Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand."
 featured = "showing-map-preview-with-mkmapsnapshotter.jpg"

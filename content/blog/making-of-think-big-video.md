@@ -1,6 +1,6 @@
 +++
 author = "Paweł Wrzosek"
-categories = ["Contest", "Video", "iBeacons"]
+categories = ["Contest", "Video", "Museum"]
 date = "2013-12-08"
 description = "See what’s has happened behind the scenes of our promo video for the \"UPC Biznes. Think big.\" contest!"
 featured = "neon-museum-promo-video-making-of.jpg"

@@ -1,20 +1,20 @@
 # Page settings
-BaseURL = "synappse.co"
+BaseURL = "http://synappse.co"
 Title = "Synappse | Web & Mobile Solutions"
 languageCode = "en-us"
 theme = "elate"
 googleAnalytics = "UA-3669024-6"
 preserveTaxonomyNames = true
 paginate = 5
-disqusShortname = "ssuchanowski"
+disqusShortname = "synappse-pl"
 pluralizeListTitles = false
 
 [params]
   navbarTitle          = "Synappse"
   viewMorePostLink     = "/blog/"
   dynamicTitles        = true
-  rssAppearAtTop       = true
-  rssAppearAtBottom    = true
+  rssAppearAtTop       = false
+  rssAppearAtBottom    = false
   socialAppearAtTop    = true
   socialAppearAtBottom = true
   categoriesByCount    = true
@@ -82,11 +82,6 @@ pluralizeListTitles = false
     services = "Services"
     about = "About"
     contact = "Contact"
-
-    [[menu.postpend]]
-      url = "/blog/"
-      name = "Blog"
-      weight = 10
   
   [params.hero]
     title = "You have the ideas.<br>We have the tools to make them a reality."

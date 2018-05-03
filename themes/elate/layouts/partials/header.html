@@ -54,6 +54,13 @@
         {{ template "_internal/schema.html" . }}
         {{ template "_internal/google_news.html" . }}
 
+        {{ if .Params.featured }}
+        <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{ .Params.featuredpath }}/{{ .Params.featured }}" />
+        <meta property="twitter:image:src" content="{{ .Site.BaseURL }}/{{ .Params.featuredpath }}/{{ .Params.featured }}" />
+        <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Params.featuredpath }}/{{ .Params.featured }}" />
+        <meta itemprop="image" content="{{ .Site.BaseURL }}/{{ .Params.featuredpath }}/{{ .Params.featured }}">
+        {{ end }}
+        
         {{ if isset .Site.Params "customcss" }}
             {{ $.Scratch.Set "cssFiles" .Site.Params.customCSS }}
         {{ else }}

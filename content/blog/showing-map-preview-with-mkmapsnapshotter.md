@@ -1,6 +1,6 @@
 +++
 author = "Sebastian Suchanowski"
-categories = ["iOS", "Swift", "Maps"]
+categories = ["iOS", "Swift", "Maps", "Tutorial"]
 date = "2018-04-28"
 description = "Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand."
 featured = "showing-map-preview-with-mkmapsnapshotter.jpg"
@@ -62,17 +62,17 @@ To make it quick and simple we will use here `NSCache` but what I usually do in 
 ### Loading map preview
 
 ```
-// 1.
+/// 1.
 if let cachedImage = cachedImage() {
     mapPreviewImageView.image = cachedImage
     return
 }
 
-// 2.
+/// 2.
 activityIndicator.isHidden = false
 activityIndicator.startAnimating()
 
-// 3.
+/// 3.
 let coords = CLLocationCoordinate2D(latitude: 52.239647, longitude: 21.045845)
 let distanceInMeters: Double = 500
 
@@ -80,7 +80,7 @@ let options = MKMapSnapshotOptions()
 options.region = MKCoordinateRegionMakeWithDistance(coords, distanceInMeters, distanceInMeters)
 options.size = mapPreviewImageView.frame.size
 
-// 4.
+/// 4.
 let bgQueue = DispatchQueue.global(qos: .background)
 let snapShotter = MKMapSnapshotter(options: options)
 snapShotter.start(with: bgQueue, completionHandler: { [weak self] (snapshot, error) in
@@ -92,7 +92,7 @@ snapShotter.start(with: bgQueue, completionHandler: { [weak self] (snapshot, err
         UIGraphicsBeginImageContextWithOptions(snapShotImage.size, true, snapShotImage.scale)
         snapShotImage.draw(at: CGPoint.zero)
 
-        // 5.
+        /// 5.
         // need to fix the point position to match the anchor point of pin which is in middle bottom of the frame
         let fixedPinPoint = CGPoint(x: coordinatePoint.x - pinImage.size.width / 2, y: coordinatePoint.y - pinImage.size.height)
         pinImage.draw(at: fixedPinPoint)
@@ -101,7 +101,7 @@ snapShotter.start(with: bgQueue, completionHandler: { [weak self] (snapshot, err
             self?.cacheImage(iamge: unwrappedImage)
         }
 
-        // 6.
+        /// 6.
         DispatchQueue.main.async {
             self?.mapPreviewImageView.image = mapImage
             self?.activityIndicator.stopAnimating()

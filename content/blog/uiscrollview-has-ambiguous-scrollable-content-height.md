@@ -1,6 +1,6 @@
 +++
 author = "Sebastian Suchanowski"
-categories = ["Autolayout", "XCode", "iOS"]
+categories = ["Autolayout", "XCode", "iOS", "Tutorial"]
 date = "2018-04-27"
 description = "Fixing ambiguous scrollable content error using autolayout."
 featured = "uiscrollview-has-ambiguous-scrollable-content-height.jpg"

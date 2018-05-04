@@ -1,7 +1,8 @@
 +++
 author = "Sebastian Suchanowski"
 categories = ["Productivity", "Hackathon", "iBeacons"]
-date = "2013-12-04"
+publishdate = "2013-12-04"
+date = "2018-04-26"
 description = "First of the series of preparation hackathons for the Jitter hackathon at Mobile Central Europe conference with great partner - Estimote"
 featured = "estimote-ibeacons.jpg"
 featuredalt = "Estimote hackathon"

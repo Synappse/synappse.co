@@ -1,7 +1,8 @@
 +++
 author = "Sebastian Suchanowski"
 categories = ["iOS", "Swift"]
-date = "2014-06-03"
+publishdate = "2014-06-03"
+date = "2018-04-30"
 description = "Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. So we all are soon to be Swift Programmers."
 featured = "introducing-apple-swift-for-ios.jpg"
 featuredalt = "Introducing Apple's Swift for iOS"

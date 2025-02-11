@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XCode on Synappse | Web &amp; Mobile Solutions</title>
+    <link>https://synappse.co/categories/xcode/</link>
+    <description>Recent content in XCode on Synappse | Web &amp; Mobile Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://synappse.co/categories/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UIScrollView has an ambiguous scrollable content height</title>
+      <link>https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/</guid>
+      <description>This error showed to us by XCode means in plain English that scroll view is not able to determine its height (or width) using autolayout. There is a very simple solution to this problem and I will walk you thru it.
+Our goal To illustrate how properly use scroll view with autolayout we will build a simple UIViewController with potentially (dynamically loaded) long text and button at the end of the view.</description>
+    </item>
+    
+  </channel>
+</rss>

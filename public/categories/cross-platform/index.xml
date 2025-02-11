@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cross-Platform on Synappse | Web &amp; Mobile Solutions</title>
+    <link>https://synappse.co/categories/cross-platform/</link>
+    <description>Recent content in Cross-Platform on Synappse | Web &amp; Mobile Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://synappse.co/categories/cross-platform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vertical, stateful JFXTabPane with icons in JavaFX</title>
+      <link>https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/</guid>
+      <description>A while ago I&amp;rsquo;ve started working on a product that needed a multiplatform desktop app. I choose JavaFX as due to my research it will work the best with the other tools and frameworks that are necessary for this project.
+Task In this post, I will show you how to build a custom vertical tab bar with icons using JFXTabPane. Our main goal over here is to create a side menu with 1 tab being single state logout button.</description>
+    </item>
+    
+  </channel>
+</rss>

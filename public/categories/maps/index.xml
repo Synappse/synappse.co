@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maps on Synappse | Web &amp; Mobile Solutions</title>
+    <link>https://synappse.co/categories/maps/</link>
+    <description>Recent content in Maps on Synappse | Web &amp; Mobile Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://synappse.co/categories/maps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Showing map preview with MKMapSnapshotter</title>
+      <link>https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/</guid>
+      <description>Working with MapKit can be tricky but if you just need a preview of the map then MKMapSnapshotter comes with a helping hand.
+MKMapSnapshotter which was introduced in iOS7 can not only simplify the code you are using to show some place&amp;rsquo;s location but also will greatly improve performance.
+For more information on how and when to use MKMapSnapshotter take a look at WWDC 2013 Session 309: “Putting Map Kit in Perspective”.</description>
+    </item>
+    
+  </channel>
+</rss>

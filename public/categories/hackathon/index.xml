@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackathon on Synappse | Web &amp; Mobile Solutions</title>
+    <link>https://synappse.co/categories/hackathon/</link>
+    <description>Recent content in Hackathon on Synappse | Web &amp; Mobile Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://synappse.co/categories/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estimote hackathon</title>
+      <link>https://synappse.co/blog/estimote-hackathon/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/estimote-hackathon/</guid>
+      <description>On Saturday (November 30, 2013) had place a first of the series of preparation hackathons for the Jitter hackathon at Mobile Central Europe conference. The Synappse Team went there to participate and make friends with this hackathon partner – Estimote.
+Task The idea was to get familiar with iBeacons technology which is why Estimote prepared some presentation and had someone on the side to help with technical issues.
+The target for us was to implement iBeacon region monitoring into our app Neon Muzeum which was sent to the App Store review another day.</description>
+    </item>
+    
+    <item>
+      <title>HACKWAW - quantified self hackathon</title>
+      <link>https://synappse.co/blog/hackwaw-quantified-self-hackathon/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/hackwaw-quantified-self-hackathon/</guid>
+      <description>Just a short note about my last weekend. I spent a great time at HACKWAW hackathon focused on Quantified Self movement. That was an amazing opportunity to met people not only from the tech industry but also to chat with mentors from the science world.
+That was a truly amazing event — so many creative people, ideas and&amp;hellip; gadgets of course! The venue was fantastic, organizers did a great job. Ola, Kuba kudos for you!</description>
+    </item>
+    
+  </channel>
+</rss>

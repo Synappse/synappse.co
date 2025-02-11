@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Synappse | Web &amp; Mobile Solutions</title>
+    <link>https://synappse.co/categories/productivity/</link>
+    <description>Recent content in Productivity on Synappse | Web &amp; Mobile Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://synappse.co/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estimote hackathon</title>
+      <link>https://synappse.co/blog/estimote-hackathon/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/estimote-hackathon/</guid>
+      <description>On Saturday (November 30, 2013) had place a first of the series of preparation hackathons for the Jitter hackathon at Mobile Central Europe conference. The Synappse Team went there to participate and make friends with this hackathon partner – Estimote.
+Task The idea was to get familiar with iBeacons technology which is why Estimote prepared some presentation and had someone on the side to help with technical issues.
+The target for us was to implement iBeacon region monitoring into our app Neon Muzeum which was sent to the App Store review another day.</description>
+    </item>
+    
+    <item>
+      <title>Unlimited vacation vs Productivity</title>
+      <link>https://synappse.co/blog/work-perks-unlimited-vacation-vs-productivity/</link>
+      <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/work-perks-unlimited-vacation-vs-productivity/</guid>
+      <description>There is a tenuous balance that every business organization must face—a positive and relaxing work culture and the need to maximize productivity. Some companies, particularly the more established ones, tend to forego developing a positive work culture altogether and simply expect employees to be the henchmen of the management’s will. This state of affairs is naturally demotivating and these companies have seen a dip in their productivity related to that. Now that even the most ardent Old School businessmen and women are coming to grips with the benefits of a positive work culture, they are left with the challenge of figuring out how to design a maximally productive one.</description>
+    </item>
+    
+  </channel>
+</rss>

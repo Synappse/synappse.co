@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iOS on Synappse | Web &amp; Mobile Solutions</title>
+    <link>https://synappse.co/categories/ios/</link>
+    <description>Recent content in iOS on Synappse | Web &amp; Mobile Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://synappse.co/categories/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Apple&#39;s Swift for iOS</title>
+      <link>https://synappse.co/blog/introducing-apple-swift-for-ios/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/introducing-apple-swift-for-ios/</guid>
+      <description>Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. Apple claims that it&amp;rsquo;s much faster than Objective-C and has better syntax but let&amp;rsquo;s get deeper into it and judge for ourselves. Official apple note:
+Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, and apps run lightning-fast. Swift is ready for your next iOS and OS X project — or for addition into your current app — because Swift code works side-by-side with Objective-C.</description>
+    </item>
+    
+    <item>
+      <title>Showing map preview with MKMapSnapshotter</title>
+      <link>https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/</guid>
+      <description>Working with MapKit can be tricky but if you just need a preview of the map then MKMapSnapshotter comes with a helping hand.
+MKMapSnapshotter which was introduced in iOS7 can not only simplify the code you are using to show some place&amp;rsquo;s location but also will greatly improve performance.
+For more information on how and when to use MKMapSnapshotter take a look at WWDC 2013 Session 309: “Putting Map Kit in Perspective”.</description>
+    </item>
+    
+    <item>
+      <title>UIScrollView has an ambiguous scrollable content height</title>
+      <link>https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/</guid>
+      <description>This error showed to us by XCode means in plain English that scroll view is not able to determine its height (or width) using autolayout. There is a very simple solution to this problem and I will walk you thru it.
+Our goal To illustrate how properly use scroll view with autolayout we will build a simple UIViewController with potentially (dynamically loaded) long text and button at the end of the view.</description>
+    </item>
+    
+    <item>
+      <title>HACKWAW - quantified self hackathon</title>
+      <link>https://synappse.co/blog/hackwaw-quantified-self-hackathon/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://synappse.co/blog/hackwaw-quantified-self-hackathon/</guid>
+      <description>Just a short note about my last weekend. I spent a great time at HACKWAW hackathon focused on Quantified Self movement. That was an amazing opportunity to met people not only from the tech industry but also to chat with mentors from the science world.
+That was a truly amazing event — so many creative people, ideas and&amp;hellip; gadgets of course! The venue was fantastic, organizers did a great job. Ola, Kuba kudos for you!</description>
+    </item>
+    
+  </channel>
+</rss>

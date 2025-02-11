@@ -1,0 +1,1446 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Showing map preview with MKMapSnapshotter</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.107.0">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        
+            <meta name="author" content="Sebastian Suchanowski">
+        
+        
+            <meta name="description" content="Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Showing map preview with MKMapSnapshotter"/>
+<meta name="twitter:description" content="Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand."/>
+<meta name="twitter:site" content="@Synappse"/>
+
+        <meta property="og:title" content="Showing map preview with MKMapSnapshotter" />
+<meta property="og:description" content="Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-04-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-28T00:00:00+00:00" />
+
+
+        <meta itemprop="name" content="Showing map preview with MKMapSnapshotter">
+<meta itemprop="description" content="Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand."><meta itemprop="datePublished" content="2018-04-28T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-04-28T00:00:00+00:00" />
+<meta itemprop="wordCount" content="701">
+<meta itemprop="keywords" content="" />
+        
+
+        
+        <meta property="twitter:image" content="https://synappse.co/img/showing-map-preview-with-mkmapsnapshotter.jpg" />
+        <meta property="twitter:image:src" content="https://synappse.co/img/showing-map-preview-with-mkmapsnapshotter.jpg" />
+        <meta property="og:image" content="https://synappse.co/img/showing-map-preview-with-mkmapsnapshotter.jpg" />
+        <meta itemprop="image" content="https://synappse.co/img/showing-map-preview-with-mkmapsnapshotter.jpg">
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://synappse.co">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/ibeacons-in-retail/">iBeacons in Retail</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-05-12'>
+                                    May 12, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/ibeacons-in-retail/" class="image featured">
+            <img src="/img/ibeacons-in-retail-city-mall.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/">Vertical, stateful JFXTabPane with icons in JavaFX</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-05-03'>
+                                    May 3, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/" class="image featured">
+            <img src="/img/vertical-stateful-jfxtabpane-with-icons-in-javafx.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/introducing-apple-swift-for-ios/">Introducing Apple&#39;s Swift for iOS</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-30'>
+                                    April 30, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/" class="image featured">
+            <img src="/img/introducing-apple-swift-for-ios.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/">Showing map preview with MKMapSnapshotter</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-28'>
+                                    April 28, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/" class="image featured">
+            <img src="/img/showing-map-preview-with-mkmapsnapshotter.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/">UIScrollView has an ambiguous scrollable content height</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-27'>
+                                    April 27, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/" class="image featured">
+            <img src="/img/uiscrollview-has-ambiguous-scrollable-content-height.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&text=Showing%20map%20preview%20with%20MKMapSnapshotter&via=Synappse" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&title=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&title=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&title=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&description=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Sebastian%20Suchanowski&body=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/images/synappse-logo-color-2.png" width="" alt="Synappse Logo" /></a>
+      
+    
+    
+      <header>
+        <h2></h2>
+        <p><a href="/blog/">Tech Blog</a></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/synappse" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/synappse" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/Synappse" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:contact@synappse.pl" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/ibeacons-in-retail/">iBeacons in Retail</a>
+              </h3>
+              
+              <time class="published" datetime='2018-05-12'>
+                May 12, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/ibeacons-in-retail/" class="image featured">
+            <img src="/img/ibeacons-in-retail-city-mall.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/">Vertical, stateful JFXTabPane with icons in JavaFX</a>
+              </h3>
+              
+              <time class="published" datetime='2018-05-03'>
+                May 3, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/" class="image featured">
+            <img src="/img/vertical-stateful-jfxtabpane-with-icons-in-javafx.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/">Introducing Apple&#39;s Swift for iOS</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-30'>
+                April 30, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/" class="image featured">
+            <img src="/img/introducing-apple-swift-for-ios.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/">Showing map preview with MKMapSnapshotter</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-28'>
+                April 28, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/" class="image featured">
+            <img src="/img/showing-map-preview-with-mkmapsnapshotter.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/">UIScrollView has an ambiguous scrollable content height</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-27'>
+                April 27, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/" class="image featured">
+            <img src="/img/uiscrollview-has-ambiguous-scrollable-content-height.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ibeacons/">ibeacons</a>
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ios/">ios</a>
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/tutorial/">tutorial</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/contest/">contest</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/hackathon/">hackathon</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/paris/">paris</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/productivity/">productivity</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/swift/">swift</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/autolayout/">autolayout</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/cross-platform/">cross-platform</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/culture/">culture</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/event/">event</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/healthcare/">healthcare</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/iot/">iot</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/java/">java</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/javafx/">javafx</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/maps/">maps</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/museum/">museum</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/open-source/">open-source</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/quantified-self/">quantified-self</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/retail/">retail</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/startups/">startups</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/video/">video</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/warsaw/">warsaw</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/workshop/">workshop</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/xcode/">xcode</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+
+  
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/synappse" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/synappse" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/Synappse" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:contact@synappse.pl" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Synappse | Web &amp; Mobile Solutions
+        
+      
+    </p>
+  </section>
+</section>
+
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/showing-map-preview-with-mkmapsnapshotter/">Showing map preview with MKMapSnapshotter</a></h1>
+            
+        
+        
+            <p>Working with MapKit can be tricky but if you only need a preview of the map then MKMapSnapshotter comes with a helping hand.</p>
+        
+    </div>
+    <div class="meta" style="margin: auto 0;">
+        
+
+        <time class="published"
+            datetime='2018-04-28'>
+            April 28, 2018</time>
+        <span class="author">Sebastian Suchanowski</span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&text=Showing%20map%20preview%20with%20MKMapSnapshotter&via=Synappse" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&title=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&title=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&title=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f&description=Showing%20map%20preview%20with%20MKMapSnapshotter" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Sebastian%20Suchanowski&body=https%3a%2f%2fsynappse.co%2fblog%2fshowing-map-preview-with-mkmapsnapshotter%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+      </ul>
+    </section>
+  
+
+  
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/" class="image featured">
+            <img src="/img/showing-map-preview-with-mkmapsnapshotter.jpg" alt="">
+        </a>
+    
+
+
+  <div id="content">
+    <p>Working with <code>MapKit</code> can be tricky but if you just need a preview of the map then <code>MKMapSnapshotter</code> comes with a helping hand.</p>
+<p><code>MKMapSnapshotter</code> which was introduced in iOS7 can not only simplify the code you are using to show some place&rsquo;s location but also will greatly improve performance.</p>
+<blockquote>
+<p>For more information on how and when to use <code>MKMapSnapshotter</code> take a look at <a href="https://developer.apple.com/videos/play/wwdc2013/309/">WWDC 2013 Session 309: “Putting Map Kit in Perspective”</a>.</p>
+</blockquote>
+<h2 id="our-goal">Our goal</h2>
+<p>We want to achieve a sustainable way of showing a map preview for some product/place details. Also, we need to add a pin to the map snapshot with the location of our target. In order to do that we need to lazily trigger <code>MKMapSnapshotter</code> and save the result to cache for the future.</p>
+<p>What&rsquo;s also great is that after we save the map snapshot to cache we don&rsquo;t even have to call the <code>MapView</code> unless user taps on it and want to see a full map experience (which is the way we always go when designing apps).</p>
+<h2 id="solution">Solution</h2>
+<h3 id="adding-necessary-imports">Adding necessary imports</h3>
+<pre tabindex="0"><code>import MapKit
+import CoreLocation
+</code></pre><p>We need <code>CoreLocation</code> for <code>CLLocationCoordinate2D</code> which we will use for setting map position before doing a snapshot.</p>
+<h3 id="adding-outlets">Adding Outlets</h3>
+<pre tabindex="0"><code>@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+@IBOutlet weak var mapPreviewImageView: UIImageView!
+</code></pre><p>Because it takes some time for <code>MKMapSnapshotter</code> to return snapshot we need activity indicator to show that something is going on.</p>
+<h3 id="caching">Caching</h3>
+<pre tabindex="0"><code>let imageCache = NSCache&lt;NSString, UIImage&gt;()
+let imageCacheKey: NSString = &#34;CachedMapSnapshot&#34; // this should be object specific name
+
+private func cacheImage(iamge: UIImage) {
+    imageCache.setObject(iamge, forKey: imageCacheKey)
+}
+
+private func cachedImage() -&gt; UIImage? {
+    return imageCache.object(forKey: imageCacheKey)
+}
+</code></pre><p>To make it quick and simple we will use here <code>NSCache</code> but what I usually do in projects is I use cache with persistence feature (saving data to disk) like <code>SDWebImage</code>, <code>Alamofire</code> or one of many other libraries out there. If you want to stick with <code>NSCache</code> you have to remember that this is memory only cache which means that all stored data will vanish when the cache object will get released. So you will have to take into consideration life cycle of the cache object (you could store it in a top view controller - like <code>UINavigationController</code> or <code>UITabbarController</code> or any other that is retained for whole app life).</p>
+<h3 id="loading-map-preview">Loading map preview</h3>
+<pre tabindex="0"><code>/// 1.
+if let cachedImage = cachedImage() {
+    mapPreviewImageView.image = cachedImage
+    return
+}
+
+/// 2.
+activityIndicator.isHidden = false
+activityIndicator.startAnimating()
+
+/// 3.
+let coords = CLLocationCoordinate2D(latitude: 52.239647, longitude: 21.045845)
+let distanceInMeters: Double = 500
+
+let options = MKMapSnapshotOptions()
+options.region = MKCoordinateRegionMakeWithDistance(coords, distanceInMeters, distanceInMeters)
+options.size = mapPreviewImageView.frame.size
+
+/// 4.
+let bgQueue = DispatchQueue.global(qos: .background)
+let snapShotter = MKMapSnapshotter(options: options)
+snapShotter.start(with: bgQueue, completionHandler: { [weak self] (snapshot, error) in
+    guard error == nil else {
+        return
+    }
+    
+    if let snapShotImage = snapshot?.image, let coordinatePoint = snapshot?.point(for: coords), let pinImage = UIImage(named: &#34;pinImage&#34;) {
+        UIGraphicsBeginImageContextWithOptions(snapShotImage.size, true, snapShotImage.scale)
+        snapShotImage.draw(at: CGPoint.zero)
+
+        /// 5.
+        // need to fix the point position to match the anchor point of pin which is in middle bottom of the frame
+        let fixedPinPoint = CGPoint(x: coordinatePoint.x - pinImage.size.width / 2, y: coordinatePoint.y - pinImage.size.height)
+        pinImage.draw(at: fixedPinPoint)
+        let mapImage = UIGraphicsGetImageFromCurrentImageContext()
+        if let unwrappedImage = mapImage {
+            self?.cacheImage(iamge: unwrappedImage)
+        }
+
+        /// 6.
+        DispatchQueue.main.async {
+            self?.mapPreviewImageView.image = mapImage
+            self?.activityIndicator.stopAnimating()
+            self?.activityIndicator.isHidden = true
+        }
+        UIGraphicsEndImageContext()
+    }
+})
+</code></pre><p>Ad. 1 - Checking cache for existing image.</p>
+<p>Ad. 2 - Initial setup for activity indicator, starting the animation.</p>
+<p>Ad. 3 - Preparing <code>MKMapSnapshotOptions</code> by telling it where the map should point to and what size the snapshot we want to get</p>
+<p>Ad. 4 - Getting the snapshot. An important note is that we are doing this in the background thread so we won&rsquo;t block the UI while this is processing.</p>
+<p>Ad. 5 - Start drawing over the image got from <code>MKMapSnapshotter</code>. Here as an example, we use the image named &ldquo;pinImage&rdquo; (which you will see at the end of this post as a orange circle with picture drawing inside) and we are placing it in the center of map preview. After that result goes to cache.</p>
+<p>Ad. 6 - Finally we are getting back to UI thread in order to update the screen with the newly created snapshot.</p>
+<h2 id="preview">Preview</h2>
+<!-- raw HTML omitted -->
+<p>Full source code for this can be found on <a href="https://github.com/Synappse/tutorials/tree/master/ios/02-map-preview-with-mkmapsnapshotter">GitHub</a>.</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+    
+    
+        
+
+        <i class="fa fa-sitemap">&nbsp;</i> 
+
+        
+        
+            Categories
+        
+
+        
+        
+            <li><a href='/categories/ios'>iOS</a></li>
+        
+            <li><a href='/categories/swift'>Swift</a></li>
+        
+            <li><a href='/categories/maps'>Maps</a></li>
+        
+            <li><a href='/categories/tutorial'>Tutorial</a></li>
+        
+    
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "synappse-pl" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+	
+	<li>
+		<a href="/blog/uiscrollview-has-ambiguous-scrollable-content-height/" class="button big previous">UIScrollView has an ambiguous scrollable content height</a>
+	</li>
+	
+
+	
+	<li style="float: right;">
+		<a href="/blog/introducing-apple-swift-for-ios/" class="button big next">Introducing Apple&#39;s Swift for iOS</a>
+	</li>
+	
+</ul>
+
+
+    </div>
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main-2.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3669024-6"></script>
+<script>
+  var doNotTrack = false;
+  if (!doNotTrack) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-3669024-6');
+  }
+</script>
+
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

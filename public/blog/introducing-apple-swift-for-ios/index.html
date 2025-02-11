@@ -1,0 +1,1434 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Introducing Apple&#39;s Swift for iOS</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.107.0">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        
+            <meta name="author" content="Sebastian Suchanowski">
+        
+        
+            <meta name="description" content="Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. So we all are soon to be Swift Programmers.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introducing Apple&#39;s Swift for iOS"/>
+<meta name="twitter:description" content="Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. So we all are soon to be Swift Programmers."/>
+<meta name="twitter:site" content="@Synappse"/>
+
+        <meta property="og:title" content="Introducing Apple&#39;s Swift for iOS" />
+<meta property="og:description" content="Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. So we all are soon to be Swift Programmers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://synappse.co/blog/introducing-apple-swift-for-ios/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2014-06-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-30T00:00:00+00:00" />
+
+
+        <meta itemprop="name" content="Introducing Apple&#39;s Swift for iOS">
+<meta itemprop="description" content="Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. So we all are soon to be Swift Programmers."><meta itemprop="datePublished" content="2014-06-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-04-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="608">
+<meta itemprop="keywords" content="" />
+        
+
+        
+        <meta property="twitter:image" content="https://synappse.co/img/introducing-apple-swift-for-ios.jpg" />
+        <meta property="twitter:image:src" content="https://synappse.co/img/introducing-apple-swift-for-ios.jpg" />
+        <meta property="og:image" content="https://synappse.co/img/introducing-apple-swift-for-ios.jpg" />
+        <meta itemprop="image" content="https://synappse.co/img/introducing-apple-swift-for-ios.jpg">
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://synappse.co">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/ibeacons-in-retail/">iBeacons in Retail</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-05-12'>
+                                    May 12, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/ibeacons-in-retail/" class="image featured">
+            <img src="/img/ibeacons-in-retail-city-mall.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/">Vertical, stateful JFXTabPane with icons in JavaFX</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-05-03'>
+                                    May 3, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/" class="image featured">
+            <img src="/img/vertical-stateful-jfxtabpane-with-icons-in-javafx.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/introducing-apple-swift-for-ios/">Introducing Apple&#39;s Swift for iOS</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-30'>
+                                    April 30, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/" class="image featured">
+            <img src="/img/introducing-apple-swift-for-ios.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/">Showing map preview with MKMapSnapshotter</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-28'>
+                                    April 28, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/" class="image featured">
+            <img src="/img/showing-map-preview-with-mkmapsnapshotter.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/">UIScrollView has an ambiguous scrollable content height</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-27'>
+                                    April 27, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/" class="image featured">
+            <img src="/img/uiscrollview-has-ambiguous-scrollable-content-height.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&text=Introducing%20Apple%27s%20Swift%20for%20iOS&via=Synappse" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&title=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&title=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&title=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&description=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Sebastian%20Suchanowski&body=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/images/synappse-logo-color-2.png" width="" alt="Synappse Logo" /></a>
+      
+    
+    
+      <header>
+        <h2></h2>
+        <p><a href="/blog/">Tech Blog</a></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/synappse" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/synappse" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/Synappse" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:contact@synappse.pl" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/ibeacons-in-retail/">iBeacons in Retail</a>
+              </h3>
+              
+              <time class="published" datetime='2018-05-12'>
+                May 12, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/ibeacons-in-retail/" class="image featured">
+            <img src="/img/ibeacons-in-retail-city-mall.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/">Vertical, stateful JFXTabPane with icons in JavaFX</a>
+              </h3>
+              
+              <time class="published" datetime='2018-05-03'>
+                May 3, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/" class="image featured">
+            <img src="/img/vertical-stateful-jfxtabpane-with-icons-in-javafx.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/">Introducing Apple&#39;s Swift for iOS</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-30'>
+                April 30, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/" class="image featured">
+            <img src="/img/introducing-apple-swift-for-ios.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/">Showing map preview with MKMapSnapshotter</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-28'>
+                April 28, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/showing-map-preview-with-mkmapsnapshotter/" class="image featured">
+            <img src="/img/showing-map-preview-with-mkmapsnapshotter.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/">UIScrollView has an ambiguous scrollable content height</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-27'>
+                April 27, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/uiscrollview-has-ambiguous-scrollable-content-height/" class="image featured">
+            <img src="/img/uiscrollview-has-ambiguous-scrollable-content-height.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ibeacons/">ibeacons</a>
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ios/">ios</a>
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/tutorial/">tutorial</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/contest/">contest</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/hackathon/">hackathon</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/paris/">paris</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/productivity/">productivity</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/swift/">swift</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/autolayout/">autolayout</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/cross-platform/">cross-platform</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/culture/">culture</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/event/">event</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/healthcare/">healthcare</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/iot/">iot</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/java/">java</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/javafx/">javafx</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/maps/">maps</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/museum/">museum</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/open-source/">open-source</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/quantified-self/">quantified-self</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/retail/">retail</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/startups/">startups</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/video/">video</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/warsaw/">warsaw</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/workshop/">workshop</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/xcode/">xcode</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+
+  
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/synappse" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/synappse" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/Synappse" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:contact@synappse.pl" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Synappse | Web &amp; Mobile Solutions
+        
+      
+    </p>
+  </section>
+</section>
+
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/introducing-apple-swift-for-ios/">Introducing Apple&#39;s Swift for iOS</a></h1>
+            
+        
+        
+            <p>Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. So we all are soon to be Swift Programmers.</p>
+        
+    </div>
+    <div class="meta" style="margin: auto 0;">
+        
+
+        <time class="published"
+            datetime='2018-04-30'>
+            April 30, 2018</time>
+        <span class="author">Sebastian Suchanowski</span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&text=Introducing%20Apple%27s%20Swift%20for%20iOS&via=Synappse" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&title=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&title=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&title=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f&description=Introducing%20Apple%27s%20Swift%20for%20iOS" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Sebastian%20Suchanowski&body=https%3a%2f%2fsynappse.co%2fblog%2fintroducing-apple-swift-for-ios%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+      </ul>
+    </section>
+  
+
+  
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://synappse.co/blog/introducing-apple-swift-for-ios/" class="image featured">
+            <img src="/img/introducing-apple-swift-for-ios.jpg" alt="">
+        </a>
+    
+
+
+  <div id="content">
+    <p>Swift was introduced on WWDC by Apple as a new programming language for iOS and OS X. Apple claims that it&rsquo;s much faster than Objective-C and has better syntax but let&rsquo;s get deeper into it and judge for ourselves. Official apple note:</p>
+<blockquote>
+<p>Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, and apps run lightning-fast. Swift is ready for your next iOS and OS X project — or for addition into your current app — because Swift code works side-by-side with Objective-C.</p>
+</blockquote>
+<p>Now we all have to download the Apple&rsquo;s book and dive into it. Below I present some of my first impressions.</p>
+<h2 id="some-advantages-we-can-see-right-now">Some advantages we can see right now</h2>
+<ul>
+<li>one line of code could work as a complete program, no imports, no main method</li>
+<li>constant value (made by keyword <code>let</code>) doesn&rsquo;t need to be set at compile time</li>
+<li>switch support any kind of data (aren&rsquo;t limited to integers)</li>
+<li>switch cases don&rsquo;t need the break keyword and got a lot of more power</li>
+<li>multiple return values in functions</li>
+<li>methods inside enums and structures - this could help is some complicated scenarios</li>
+<li>generic forms of functions, methods, classes, enumerations, and structures</li>
+<li>Tuples - group multiple values into a single compound value, like</li>
+</ul>
+<pre tabindex="0"><code>let http404Error =  (404, &#34;Not Found&#34;)
+</code></pre><h2 id="other-helpful-things-that-i-could-live-without">Other helpful things that I could live without</h2>
+<ul>
+<li>no semicolons at the end of the statement (ok, but I&rsquo;ve already got used that ;-) )</li>
+<li>nesting functions</li>
+<li>nested multiline comments</li>
+<li>range operator used in for loops</li>
+</ul>
+<pre tabindex="0"><code>// contains from 1 to 10 (including last value)
+for index in 1...10
+
+// contains from 1 to 9 - half-closed range operator
+for index in 1..10
+</code></pre><h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>Bool is now true/false</li>
+<li>no prefixes for types (means if you type &rsquo;s&rsquo; then you will get all the autocompletion options with types and other stuff)</li>
+<li>function declaration lost its magic, now looks like this</li>
+</ul>
+<pre tabindex="0"><code>func sampleMethed(arg1: String, arg2: String) -&gt; (String, Double)
+</code></pre><ul>
+<li>simpler way to include values in strings:<!-- raw HTML omitted --></li>
+</ul>
+<pre tabindex="0"><code>let testNo = 5
+let stringTest = &#34;This is my \(testNo) test.&#34;
+</code></pre><p>I liked the old way better</p>
+<ul>
+<li>omitting <code>@</code> sign when creating arrays, dictionaries, etc..  - I kinda got used to it and liked it, it made non-Objective-C developers scared ;)</li>
+<li>new empty dictionary syntax</li>
+</ul>
+<pre tabindex="0"><code>let newDict = Dictionary&lt;String, Double&gt;()
+let newDict2 = [:]
+</code></pre><ul>
+<li>in <code>if</code> statement, the conditional must be a bool expression, so this won&rsquo;t work</li>
+</ul>
+<pre tabindex="0"><code>var newString:String = &#34;aaa&#34;
+if newString {
+    println(&#34;OK!&#34;)
+}
+</code></pre><p>This will</p>
+<pre tabindex="0"><code>var newString:String = &#34;aaa&#34;
+
+if newString != nil {
+    println(&#34;OK!&#34;)
+}
+
+// OR
+// using optional value
+
+var optionalValue: String? = &#34;aaa&#34;
+var result: String = &#34;&#34;
+
+if let stringVal = optionalValue {
+    result = stringVal
+}
+
+println(result)
+</code></pre><p>Overall, maybe it&rsquo;s new and hip but I don&rsquo;t think I am gonna like it, especially at the beginning when it&rsquo;s not really a stable product and a lot will change (probably breaking the code for next 2 years). I feel like playing in a good game while developing so far. We will see how the experience for an iOS developer will change with this. I hope that it will not be as bad and I will not end up writing in old (soon probably unsupported) Objective-C. Still, there is much to learn.</p>
+<hr>
+<p>Updates:</p>
+<ul>
+<li>04.2018: As for today swift has been for a while with us and a lot, I mean, a whole lot has changed over the course of last few years. But it all seems to be for the better. Still, compile time cannot match Objective-C but we all now feel when creating apps like we are using a modern programming language.</li>
+</ul>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+    
+    
+        
+
+        <i class="fa fa-sitemap">&nbsp;</i> 
+
+        
+        
+            Categories
+        
+
+        
+        
+            <li><a href='/categories/ios'>iOS</a></li>
+        
+            <li><a href='/categories/swift'>Swift</a></li>
+        
+    
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "synappse-pl" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+	
+	<li>
+		<a href="/blog/showing-map-preview-with-mkmapsnapshotter/" class="button big previous">Showing map preview with MKMapSnapshotter</a>
+	</li>
+	
+
+	
+	<li style="float: right;">
+		<a href="/blog/vertical-stateful-jfxtabpane-with-icons-in-javafx/" class="button big next">Vertical, stateful JFXTabPane with icons in JavaFX</a>
+	</li>
+	
+</ul>
+
+
+    </div>
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main-2.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3669024-6"></script>
+<script>
+  var doNotTrack = false;
+  if (!doNotTrack) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-3669024-6');
+  }
+</script>
+
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,5 +1,5 @@
 # Page settings
-BaseURL = "http://synappse.co"
+BaseURL = "https://synappse.co"
 Title = "Synappse | Web & Mobile Solutions"
 languageCode = "en-us"
 theme = "elate"
@@ -67,7 +67,7 @@ pluralizeListTitles = false
   telegram        = ""
   vine            = ""
   # Email
-  email           = "contact@synappse.pl"  # TODO: sprawdzic maila
+  email           = "contact@synappse.pl"
 
 [params.postAmount]
   sidebar = 5
@@ -378,7 +378,7 @@ pluralizeListTitles = false
     details = [
         # ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
        # ["icon-social-skype", "s.suchanowski"],
-        ["icon-envelope", '<a href="mailto:contact@synappse.co">contact@synappse.co</a>'],
+        ["icon-envelope", '<a href="mailto:contact@synappse.pl">contact@synappse.pl</a>'],
         ["icon-globe", '<a href="http://synappse.co/" target="_blank">synappse.co</a>']
       ]
 
@@ -393,5 +393,5 @@ pluralizeListTitles = false
     enable = true
     twitter = "https://twitter.com/synappse"
     facebook = "https://www.facebook.com/synappse/"
-    youtube = "https://www.youtube.com/channel/UCN8nRYmOgA8MCnDxnyLH-vg" # TODO: podmienic link jak bedzie juz porzadny
+    youtube = "https://www.youtube.com/@synappse"
     copyright = '&copy; Synappse. All Rights Reserved'
